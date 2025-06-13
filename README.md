@@ -1,4 +1,4 @@
-# <img src="images/AutoVLA-Logo.png" width="35" height="35" style="vertical-align: middle; margin-right: 10px;"> AutoVLA
+# <img src="images/AutoVLA-Logo.png" width="35" height="35" style="vertical-align: bottom; margin-right: 10px;"> AutoVLA
 
 [![website](https://img.shields.io/badge/Website-Explore%20Now-blueviolet?style=flat&logo=google-chrome)](https://autovla.github.io/)
 [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)]()
