@@ -1,4 +1,4 @@
-# AutoVLA
+# <img src="images/AutoVLA-Logo.png" width="35" height="35" style="vertical-align: middle; margin-right: 10px;"> AutoVLA
 
 [![website](https://img.shields.io/badge/Website-Explore%20Now-blueviolet?style=flat&logo=google-chrome)](https://autovla.github.io/)
 [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)]()
@@ -6,7 +6,7 @@
 [![dataset](https://img.shields.io/badge/Dataset-Download-F9D371.svg)]()
 <!-- [![License](https://img.shields.io/badge/License-CC_BY_NC_ND_4.0-F9D371)](https://creativecommons.org/licenses/by-nc-nd/4.0/) -->
 
-This is the official implementation for the following paper:
+<!-- This is the official implementation for the following paper: -->
 
 [**AutoVLA: A Vision-Language-Action Model for End-to-End Autonomous Driving with Adaptive Reasoning and Reinforcement Fine-Tuning**](https://arxiv.org/abs/2404.02524)
 
