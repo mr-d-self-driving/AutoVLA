@@ -1,7 +1,7 @@
 # <img src="images/AutoVLA-Logo.png" width="35" height="35" style="vertical-align: bottom; margin-right: 10px;"> AutoVLA
 
 [![website](https://img.shields.io/badge/Website-Explore%20Now-blueviolet?style=flat&logo=google-chrome)](https://autovla.github.io/)
-[![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)]()
+[![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2506.13757)
 [![dataset](https://img.shields.io/badge/Dataset-Download-F9D371.svg)]()
 <!-- [![License](https://img.shields.io/badge/License-CC_BY_NC_ND_4.0-F9D371)](https://creativecommons.org/licenses/by-nc-nd/4.0/) -->
 
@@ -43,6 +43,6 @@ If you find this repository useful for your research, please consider giving us 
 @article{zhou2025autovla,
   title={AutoVLA: A Vision-Language-Action Model for End-to-End Autonomous Driving with Adaptive Reasoning and Reinforcement Fine-Tuning},
   author={Zhou, Zewei and Cai, Tianhui and Zhao, Seth Z.and Zhang, Yun and Huang, Zhiyu and Zhou, Bolei and Ma, Jiaqi},
-  journal={arXiv preprint},
+  journal={arXiv preprint arXiv:2506.13757},
   year={2025}
 }
