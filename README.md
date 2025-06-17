@@ -35,7 +35,7 @@ University of California, Los Angeles - <sup>*</sup> Equal contribution, <sup>�
 - **`2025/05`**: In the [Waymo end-to-end driving Challenge](https://waymo.com/open/challenges/2025/e2e-driving/), AutoVLA ranks highly in both RFS Overall and achieves the top score in the RFS Spotlight metric, which focuses on the most challenging scenarios.
 
 ## TODO List
-- ✅ AutoVLA paper.
+✅ AutoVLA paper.
 - [ ] Reasoning data.
 - [ ] Reasoning annotation code.
 - [ ] AutoVLA code.
