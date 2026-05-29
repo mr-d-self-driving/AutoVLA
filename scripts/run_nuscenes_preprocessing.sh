@@ -5,10 +5,10 @@
 set -e
 
 # Default paths - modify these for your setup
-NUSCENES_PATH="/data/dataset/nuscenes"
-OUTPUT_BASE_DIR="data/nuscenes"
+NUSCENES_PATH="./dataset/nuscenes" # /path/to/nuscenes
+OUTPUT_BASE_DIR="./dataset/nuscenes" # /path/to/output 
 NUSCENES_VERSION="v1.0-trainval"
-DRIVELM_PATH=""  # Optional: path to DriveLM annotations
+DRIVELM_PATH=""  # Optional: path to DriveLM annotations /path/to/drivelm/v1_1_train_nus.json
 
 # Parse command line arguments
 while [[ $# -gt 0 ]]; do

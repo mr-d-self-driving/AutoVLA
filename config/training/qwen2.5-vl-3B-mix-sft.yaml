@@ -1,11 +1,11 @@
 
-name: qwen2.5-vl-3B-nusc-sft
-description: AutoVLA based on Qwen 2.5 VL 3B model fine-tuned on NuPlan dataset with action only
+name: qwen2.5-vl-3B-mix-sft
+description: AutoVLA based on Qwen 2.5 VL 3B model fine-tuned on mixed nuPlan + nuScenes dataset with CoT
 
 # model
 model:
   use_cot: true
-  pretrained_model_path: /data/AutoVLA/Qwen2.5-VL-3B-Instruct
+  pretrained_model_path: ./Qwen2.5-VL-3B-Instruct
   train_vision_backbone: false
   train_lm_backbone: true
   codebook_cache_path: "codebook_cache/agent_vocab.pkl"
@@ -37,15 +37,17 @@ training:
 data:
   train:
       json_dataset_path: 
-        - /data/dataset/nuplan/navtest_nocot
-        - /data/AutoVLA/nusc_drivelm_codeclean_train
+        - ./dataset/nuplan/trainval
+        - ./dataset/nuscenes/nuscenes_train
       sensor_data_path: 
-        - /data/AutoVLA/nuplan/sensor_blobs/test
-        - /data/dataset/nuscenes
+        - ./dataset/nuplan/sensor_blobs/trainval
+        - null
 
   val:
-      json_dataset_path: /data/AutoVLA/nusc_drivelm_codeclean_val
-      sensor_data_path: /data/dataset/nuscenes
+      scene_filter: ./navsim/navsim/planning/script/config/common/train_test_split/scene_filter/navtest.yaml
+      metric_cache_path: ./dataset/nuplan/navtest_metric_cache
+      json_dataset_path: ./dataset/nuplan/navtest
+      sensor_data_path: ./dataset/nuplan/sensor_blobs/test
 
 
 inference:
@@ -53,6 +55,6 @@ inference:
   num_workers: 2
   sample:
     max_length: 2048
-    temperature: 0.8
-    top_k: 20
-    top_p: 0.2
+    temperature: 0.01
+    top_k: 0
+    top_p: 1.0

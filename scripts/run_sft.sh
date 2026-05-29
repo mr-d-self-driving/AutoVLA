@@ -1,1 +1,1 @@
-python tools/run_sft.py --config training/qwen2.5-vl-3B-nuplan-sft-action-only
+python tools/run_sft.py --config training/qwen2.5-vl-3B-mix-sft

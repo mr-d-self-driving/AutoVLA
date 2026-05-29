@@ -5,7 +5,7 @@ export TF_ENABLE_ONEDNN_OPTS=0
 
 INCLUDE_COT=false
 CONFIG="dataset/qwen2.5-vl-72B-waymo"
-OUTPUT_DIR="temp"
+OUTPUT_DIR="./dataset/waymo"
 
 if [ "$INCLUDE_COT" = true ]; then
     echo "Preprocessing with Chain-of-Thought (CoT)..."

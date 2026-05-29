@@ -96,13 +96,18 @@ class SFTDataset(Dataset):
         # List of camera types to load
         camera_types = ['front_camera', 'front_left_camera', 'front_right_camera']
         
-        if input_features['sensor_data_path']:
-            for camera_type in camera_types:
-                camera_images[camera_type] = []
-                for i in range(4):
-                    img = images[camera_type][i]
+        # When sensor_data_path is set, image paths in the json are relative and
+        # need to be prefixed with it. When it is null/empty (e.g. nuScenes stores
+        # full paths during preprocessing), use the stored path as-is.
+        for camera_type in camera_types:
+            camera_images[camera_type] = []
+            for i in range(4):
+                img = images[camera_type][i]
+                if input_features['sensor_data_path']:
                     camera_images[camera_type].append(
                         os.path.join(input_features['sensor_data_path'], img))
+                else:
+                    camera_images[camera_type].append(img)
 
         # Assign to individual variables for message formatting
         front_camera_1, front_camera_2, front_camera_3, front_camera_4 = camera_images['front_camera']
